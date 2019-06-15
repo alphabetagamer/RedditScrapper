@@ -9,11 +9,11 @@ import praw
 import random
 import urllib.request
 
-reddit = praw.Reddit(client_id='9wK2B_VK2ubjbg',
-                     client_secret='0tZu4owtCPURqp4RJTY3yckEr88',
-                     password='24663915',
+reddit = praw.Reddit(client_id='******',
+                     client_secret='***',
+                     password='**',
                      user_agent='Data Scraping',
-                     username='notabota123')
+                     username='****3')
 #for submission in reddit.subreddit('gentlemanboners').hot(limit=20) :
 for submission in reddit.redditor('dendritesofdendrites').submissions.top('all') :
     if not submission.stickied:
